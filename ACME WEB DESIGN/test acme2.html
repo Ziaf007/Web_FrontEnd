@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <style>
+  body{font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height:2;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/*global*/
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+nav li{font:"Times New Roman", Times, serif;}
+
+.button_1{
+height:38px;
+border:0;
+background:#e8491d;
+padding-left:20px;
+padding-right:20px;
+color:#FFFFFF;
+font-size:18px;
+margin-top:20px;
+}
+
+ul{
+ margin: 0;
+ padding: 0;
+}
+
+/*header*/
+header{
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+  padding-bottom:30px;
+  
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:22px;
+}
+
+header li{
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float : left;
+}
+
+header #branding h1{
+  margin: 0; font-size:40px;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+  font:Verdana, Arial, Helvetica, sans-serif;
+}
+
+header .highlight, header .current a{
+  color:#e84912;
+  font-weight: bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight: bolder;
+  font-size:20px;
+}
+
+/*showcase*/
+#showcase{
+font-family:"Times New Roman", Times, serif;
+color:#FFFFFF;
+  min-height: 400px;
+ background-image:url('http://www.mvminfotech.com/blog/wp-content/uploads/1920x1200-3.jpg.png');
+ background-repeat:no-repeat;
+text-align:center;
+}
+
+#showcase h1{font-size:36px;
+			font-family:Arial, Helvetica, sans-serif;
+			margin-top:100px;
+			padding-top:10px;
+			padding-bottom:10px;
+			margin-bottom:10px;
+			}
+			
+#showcase p{ font-weight:bold;
+font-size:20px;
+overflow:auto;
+}
+
+/*newsletter*/
+
+#newsletter{
+padding:15px 0px 15px 0px;
+color:#FFFFFF;
+background-color:#35424a;}
+
+#newsletter h1{float:left;}
+
+#newsletter form{
+float:right;
+margin-top:15px;}
+
+#newsletter input[type="email"]{
+height:25px;
+width:300px;
+padding:4px;
+ }
+/*boxes*/
+
+
+.box img{ width:160px;}
+
+#boxes{
+margin-top:90px; font-size:20px;}
+
+#boxes .box{
+float:left; width:30%; display:block; padding:6px; text-align:center;}
+
+/*sidebar*/
+
+#sidebar{ float:right; background:#35424A; color:#FFFFFF; width:30%; padding-left:20px; padding-right:20px; margin-top:0px; font-size:18px;}
+
+#sidebar h3{font-size:26px;}
+
+/*article*/
+
+.container article{display:inline; float:left; width:50%; font-size:20px; text-align:justify;}
+
+.page_title{ font:"Times New Roman", Times, serif; font-size:34px;}
+
+/*services*/
+
+#services li{ background:#D7D7D7; padding:10px 10px 10px 10px; margin-bottom:20px;}
+
+/*quote*/
+
+form #sidebar{padding:10px 12px 30px 12px; margin:2px 8px 2px 8px; width:30%; }
+
+form #sidebar li{ margin:14px 0px 14px 0px;}
+
+form #sidebar input[type="text"] {float:right;}
+
+form #sidebar input[type="textarea"] {height:50px; margin-bottom:10px; float:right;}
+
+/*footer*/
+
+#foot { background:#E8491d; color:white; padding-top:4px; padding-bottom:4px; text-align:center; font:"Times New Roman", Times, serif; font-size:18px; margin-top:20px;}
+
+/*media queries*/
+
+@media( max-width:768px ) {
+header #branding ,
+header li ,
+header nav ,
+#newsletter h1 ,
+#newsletter form ,
+#boxes .box ,
+#sidebar ,
+.container h1 ,
+.container article, 
+form #sidebar{float:none; text-align:center; width:100%;}
+
+#sidebar , form #sidebar{margin-top:30px; padding-left:20px; padding-right:20px; padding-top:2px; padding-bottom:2px; }
+
+#sidebar p, form #sidebar li{padding-right:40px; padding-bottom:20px; margin-bottom:30px;}
+
+#newsletter button , form #sidebar input[type="button"]{ display:block; width:100%; margin-top:10px;}
+
+#newsletter h1{margin-top:0px;}
+
+header { padding-bottom:10px;}
+
+#newsletter form input[type="email"] , form #sidebar input[type="text"], form #sidebar input[type="textarea"] {width:100%;}
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Acme Web Design | Welcome</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Acme</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="test acme.html">Home</a></li>
+            <li><a href="test acme1.html">About</a></li>
+            <li class="current"><a href="test acme2.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="enter your email...">
+          <button type="submit" class="button_1">subscribe</button>
+        </form>
+      </div>
+    </section>
+
+	<section id="main">
+		<div class="container">
+			<h1 class="page_title">Services</h1>
+    			<article> 
+				<ul id="services">
+				<li>
+				<h3> Website Design</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe quaerat magnam expedita minima quo natus laudantium ipsam, iste ratione odit pariatur, nihil rem! Cum quaerat, est accusantium dolor sint?</p>
+				<p>Pricing : $1,000 - $3,000</p>
+				</li>
+				<li>
+				<h3> Website Maintenance</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe quaerat magnam expedita minima quo natus laudantium ipsam, iste ratione odit pariatur, nihil rem! Cum quaerat, est accusantium dolor sint?</p>
+				<p>Pricing : $250 per month</p>
+				</li>
+				<li>
+				<h3> Website Hosting</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe quaerat magnam expedita minima quo natus laudantium ipsam, iste ratione odit pariatur, nihil rem! Cum quaerat, est accusantium dolor sint?</p>
+				<p>Pricing : $25 per month</p>
+				</li>
+				</ul>
+				 </article>
+				
+				<form>
+					<aside id="sidebar">
+						<h3>Get A Quote</h3>
+						<ul style="list-style:none;">
+						<li>Name <input type="text" placeholder="enter your name"></li>
+						<li>Email-Address<input type="text" placeholder="enter your e-mail"></li>
+						<li>Message<input type="textarea" placeholder="enter your comments"></li>
+						<li><input class="button_1" type="button" value="Submit"></li>
+						</ul> 
+					</aside>
+				</form>
+		</div>
+	</section>
+
+    <footer id="foot">
+    <p><marquee scrollamount="16" direction="right">Acme Web Design, Copyright &copy; 2019</marquee></p></footer>
+
+
+  </body>
+</html>
